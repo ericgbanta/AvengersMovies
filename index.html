@@ -27,7 +27,7 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid">
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
         <h1 class="display-3">Welcome to MCU Movies!</h1>
@@ -46,7 +46,7 @@
               class="card-img-top"
               src="static/avengers1.jpg"
               alt=""
-              style="max-width: 700px; max-height: 1000px"
+              style="width: 100%; height: 600px; object-fit:cover;"
             />
             <div class="card-body">
               <h4 class="card-title">The Avengers</h4>
@@ -54,25 +54,31 @@
                 When Thor's evil brother, Loki, gains access to the unlimited
                 power of the energy cube called the Tesseract, Nick Fury,
                 director of S.H.I.E.L.D., initiates a superhero recruitment
-                effort to defeat the unprecedented threat to Earth.
+                effort to defeat the unprecedented threat to Earth. Joining Fury's 
+                "dream team" are Iron Man, Captain America, the Hulk, Thor, the Black Widow and Hawkeye.
               </p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer text-center">
+              <div class="row text-center">
+              <div class="mx-auto">
               <a
                 href="https://www.youtube.com/watch?v=eOrNdBpGMv8"
                 class="btn btn-primary"
                 target="_blank"
+                role="button"
                 >Watch Trailer!</a
               >
               <!-- Button trigger modal -->
               <button
-                type="button"
+                role="button"
                 class="btn btn-primary"
                 data-toggle="modal"
                 data-target="#myModal"
               >
                 See Details!
               </button>
+            </div>
+          </div>
 
               <!-- Modal -->
               <div
@@ -90,7 +96,12 @@
                 <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h4 class='col-12 modal-title text-center' id="myModalLabel">Movie Details</h4>
+                      <h4
+                        class="col-12 modal-title text-center"
+                        id="myModalLabel"
+                      >
+                        Movie Details
+                      </h4>
                     </div>
                     <div class="modal-body">
                       <strong>Director:</strong> Joss Whedon <br />
@@ -116,7 +127,12 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="static/avengers2.jpg" alt="" />
+            <img
+              class="card-img-top"
+              src="static/avengers2.jpg"
+              alt=""
+              style="width: 100%; height: 600px; object-fit:cover;"
+            />
             <div class="card-body">
               <h4 class="card-title">Avengers: Age of Ultron</h4>
               <p class="card-text">
@@ -140,7 +156,12 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="static/avengers3.jpg" alt="" />
+            <img
+              class="card-img-top"
+              src="static/avengers3.jpg"
+              alt=""
+              style="width: 100%; height: 600px; object-fit:cover;"
+            />
             <div class="card-body">
               <h4 class="card-title">Avengers: Infinity War</h4>
               <p class="card-text">
@@ -165,7 +186,12 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card h-100">
-            <img class="card-img-top" src="static/avengers4.jpg" alt="" />
+            <img
+              class="card-img-top"
+              src="static/avengers4.jpg"
+              alt=""
+              style="width: 100%; height: 600px; object-fit:cover;"
+            />
             <div class="card-body">
               <h4 class="card-title">Avengers: Endgame</h4>
               <p class="card-text">
