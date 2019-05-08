@@ -269,79 +269,62 @@
                   </div>
               </div>
             </div>
-                          <!-- Button trigger modal -->
+                          <!-- Button toggle hide -->
                           <div class="mx-auto" style="padding-bottom: 20px">
                           <button
                           role="button"
                           class="btn btn-primary"
-                          data-toggle="modal"
-                          data-target="#myModal1"
+                          data-toggle="collapse"
+                          href="#more"
+                          onclick="myFunction()"
                         >
-                          See More Avengers!
+                          See More Avengers
                         </button>
-                      </div>
-                    
-          
-                        <!-- Modal -->
-                        <div
-                          class="modal fade"
-                          id="myModal1"
-                          tabindex="-1"
-                          role="dialog"
-                          aria-labelledby="myModalLabel"
-                        >
-                          <style>
-                            body.modal-open div.modal-backdrop {
-                              z-index: 0;
+                        <script type="text/javascript">
+                          function myFunction() {
+                            var x = document.getElementById("more-avengers");
+                            if (x.style.display === "none") {
+                              x.style.display = "block";
+                            } else {
+                              x.style.display = "none";
                             }
-                          </style>
-          
-                          <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content" style="background-color: rgb(20, 20, 20);" >
-                              <div class="modal-header">
-                                <h4
-                                  class="col-12 modal-title text-center"
-                                  id="myModalLabel"
-                                >
-                                  More Avengers
-                                </h4>
-                              </div>
-                              <div class="tabbable">
-                              <ul class="nav nav-tabs nav-fill" id="tabContent">
-                                <li class="active"><a href="#details" data-toggle="tab">War Machine</a></li>
-                                <li><a href="#access-security" data-toggle="tab">Falcon</a></li>
-                                <li><a href="#networking" data-toggle="tab">Scarlett Witch</a></li>
-                            </ul>
-                          </div>
-                            
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="details">
-                            
-                                        Details tab
-                                   <div class="control-group">
-                                       <label class="control-label">Instance Name</label>
-                                   </div>
-                                </div>
-                            
-                                <div class="tab-pane" id="access-security">
-                                    content 0
-                                </div> 
-                                <div class="tab-pane" id="networking">
-                                    content 1
-                                </div> 
+                          }
+                        </script>
+                      </div>
+                        <div class="collapse" id="more">
+                        <div class="card-group" id="more-avengers" style="padding-bottom: 20px; display: none'">
+                          <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             </div>
-                              <div class="modal-footer">
-                                <button
-                                  type="button"
-                                  class="btn btn-primary"
-                                  data-dismiss="modal"
-                                >
-                                  Close
-                                </button>
-                              </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
                           </div>
                         </div>
+                      </div>
     </div>
     <!-- /.row -->
 
